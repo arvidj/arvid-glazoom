@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$KYNAH3"
+                   em:locale="fr-FR"
+                   em:name="Glazoom (anciennement Zoom It!)"
+                   em:description="Zoome une section de la page dans la fenêtre" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="zoomit@disruptive-innovations.com"
+                   em:version="0.4"
+                   em:type="2"
+                   em:name="Glazoom (formerly known as Zoom It!)"
+                   em:description="Zooms to make your desired section of a page fit into the viewport"
+                   em:creator="Disruptive Innovations SARL"
+                   em:homepageURL="http://disruptive-innovations.com/"
+                   em:iconURL="chrome://glazoom/skin/glazoom.png"
+                   em:optionsURL="chrome://glazoom/content/prefs.xul"
+                   >
+    <em:targetApplication RDF:resource="rdf:#$DYNAH3"/>
+    <em:localized RDF:resource="rdf:#$KYNAH3"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$DYNAH3"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0b4"
+                   em:maxVersion="3.5.1" />
+</RDF:RDF>

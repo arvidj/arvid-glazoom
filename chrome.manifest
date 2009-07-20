@@ -1,0 +1,7 @@
+content glazoom                    jar:chrome/glazoom.jar!/content/
+overlay chrome://browser/content/browser.xul  chrome://glazoom/content/glazoomOverlay.xul
+locale  glazoom  en-US             jar:chrome/glazoom.jar!/locale/en-US/
+locale  glazoom  fr-FR             jar:chrome/glazoom.jar!/locale/fr-FR/
+skin    glazoom  classic/1.0       jar:chrome/glazoom.jar!/skin/
+style   chrome://browser/content/browser.xul chrome://glazoom/skin/glazoomOverlay.css
+override chrome://global/content/viewZoomOverlay.js chrome://glazoom/content/viewZoomOverlay.js
