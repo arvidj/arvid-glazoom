@@ -1,0 +1,6 @@
+﻿<!ENTITY glazoomMenuItem.label "Zoomer sur l'élément">
+<!ENTITY glazoomBackMenuItem.label "Taille réelle (1:1)">
+<!ENTITY preferences.label "Préférences">
+<!ENTITY glazoomFitToWindowMenuItem.label "Adaptation horizontale à la fenêtre">
+<!ENTITY inspectMenuItem.label "Sélectionner un élément sur lequel zoomer">
+<!ENTITY inspectMenuItem.accesskey "S">

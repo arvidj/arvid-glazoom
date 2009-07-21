@@ -1,0 +1,25 @@
+﻿<!ENTITY about.title "A propos de Glazoom">
+<!ENTITY version.label "v0.4">
+<!ENTITY author.control "Auteur :">
+<!ENTITY author.label "Daniel Glazman">
+<!ENTITY okButton.label "Ok">
+
+<!ENTITY about.text1 "Glazoom est à la fois une extension pour Firefox 3.x ajoutant un contrôle direct du niveau de zoom dans la barre de statut du bas de la fenêtre de navigation et un outil important d'accessibilité permettant à des usagers mal-voyant d'adapter le niveau de zoom directement à la lecture d'une zone de la page (texte ou image ou les deux) en cours de visualisation.">
+<!ENTITY about.text2 "Fonctionnalités principales :">
+<!ENTITY about.feature1 "- Facilité d'alterner entre Zoom Textuel et Zoom Intégral">
+<!ENTITY about.feature2 "- Focalisation aisée sur les cellules de tableaux">
+<!ENTITY about.feature3 "- Gestion d'un niveau de zoom identique pour les pages d'un même domaine">
+<!ENTITY about.feature4 "- Gestion des niveaux de zoom prédéfinis">
+<!ENTITY about.feature5 "- Différents styles de boutons pour la diminution et l'augmentation du facteur de zoom en un seul clic">
+
+<!ENTITY donate.text1 "Cette extension peut être obtenue gratuitement depuis le site addons.mozilla.org et est sous licence Mozilla Public License. Importante pour l'accessibilité des utilisateurs de Firefox mal-voyants, sa maintenance me prend beaucoup de temps.">
+<!ENTITY donate.text2 "Aussi, si cette extension vous satisfait ou a amélioré votre confort d'utilisation du navigateur, merci d'envisager un petit don qui me permettra d'investir plus de temps dans son développement. (Un compte PayPal n'est pas obligatoire, les cartes de crédit sont acceptées)">
+
+<!ENTITY whatsnew.label "Nouveautés de cette version :">
+<!ENTITY whatsnew2.text "- Le menuseparator du menu dans la statusbar ne s'affichait pas">
+<!ENTITY whatsnew1.text "- Possibilité de sélectionner visuellement un élément sur lequel focaliser (menu 'Sélectionner un élément sur lequel zoomer')">
+
+<!ENTITY donate.label "Faire un don">
+
+<!ENTITY about.tab "A propos...">
+<!ENTITY whatsnew.tab "Nouveautés">

@@ -1,0 +1,22 @@
+﻿<!ENTITY prefs.title "Préférences Glazoom">
+
+<!ENTITY maxZoomFactor.label "Facteur de zoom maximal:">
+<!ENTITY maxZoomFactor.value.unit "&#x0025; lors du zoom sur un élément">
+<!ENTITY preferTableCells.label "Remonter aux cellules de tableau">
+
+<!ENTITY focusElement.label "Elément à zoomer:">
+<!ENTITY presetZooms.label "Facteurs de zoom prédéfinis:">
+
+<!ENTITY onLocationChange.label "Gestion du zoom:">
+<!ENTITY applyPrefToSetting.label "Zoom identique pour toutes les pages d'un même domaine">
+
+<!ENTITY aboutGlazoom.label "A propos de Glazoom">
+<!ENTITY useFullZoom.checkbox "Zoom intégral au lieu du Zoom textuel">
+<!ENTITY useFullZoom.label "Type de zoom:">
+
+<!ENTITY buttonsStyle.label "Style des boutons de zoom:">
+<!ENTITY nobuttons.label "Pas de boutons du tout">
+<!ENTITY spinbuttons.label "Utiliser des spinbuttons">
+<!ENTITY magnifyingGlasses.label "Utiliser deux loupes">
+
+<!ENTITY donate.label "Faire un don">

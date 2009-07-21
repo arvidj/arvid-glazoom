@@ -1,0 +1,26 @@
+﻿<!ENTITY prefs.title "Glazoom Preferences">
+
+<!ENTITY maxZoomFactor.label "Maximum zoom factor:">
+<!ENTITY maxZoomFactor.value.unit "&#x0025; when focusing on an element">
+
+<!ENTITY zoomMargin.label "Zoom margin:">
+<!ENTITY zoomMargin.value.unit "px when focusing on an element">
+
+<!ENTITY preferTableCells.label "Focus on enclosing table cell if any">
+
+<!ENTITY focusElement.label "Focus element:">
+<!ENTITY presetZooms.label "Predefined zoom levels:">
+
+<!ENTITY onLocationChange.label "Zoom policy:">
+<!ENTITY applyPrefToSetting.label "Same zoom level for all pages from same domain">
+
+<!ENTITY aboutGlazoom.label "About Glazoom">
+<!ENTITY useFullZoom.checkbox "Full Zoom instead of Text Zoom">
+<!ENTITY useFullZoom.label "Zoom type:">
+
+<!ENTITY buttonsStyle.label "Style of increase/decrease zoom buttons:">
+<!ENTITY nobuttons.label "I don't want buttons at all">
+<!ENTITY spinbuttons.label "Use spinbuttons">
+<!ENTITY magnifyingGlasses.label "Use two magnifying glasses">
+
+<!ENTITY donate.label "Donate">

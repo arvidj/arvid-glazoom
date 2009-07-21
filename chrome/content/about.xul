@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the Glazoom extension for Mozilla Firefox.
+   -
+   - The Initial Developer of the Original Code is
+   - DISRUPTIVE INNOVATIONS SARL
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://glazoom/skin/about.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://glazoom/locale/about.dtd">
+
+<window id="glazoom_prefs"
+            title="&about.title;"
+            orient="vertical"
+            xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+
+  <script type='application/x-javascript'
+          src='chrome://glazoom/content/about.js'></script>
+
+  <stringbundle id="bundle" src="chrome://glazoom/locale/about.properties" />
+
+  <hbox id="page">
+    <spacer flex="1"/>
+	  <vbox id="main">
+      <grid>
+        <columns><column/><column flex="1"/></columns>
+        <rows>
+          <row align="center">
+            <image src="chrome://glazoom/skin/glazoom.png"/>
+			      <hbox align="center" id="titleBox">
+			        <label value="Glazoom"/>
+			        <label value="&version.label;"/>
+			      </hbox>
+          </row>
+          <row align="center">
+            <spacer/>
+            <hbox>
+	            <label value="&author.control;"/>
+	            <label value="&author.label;"/>
+            </hbox>
+          </row>
+        </rows>
+      </grid>
+
+      <tabbox flex="1" id="tabbox">
+	      <tabs>
+	        <tab label="&about.tab;"/>
+	        <tab label="&whatsnew.tab;"/>
+	      </tabs>
+	      <tabpanels>
+	        <vbox>
+	          <description>&about.text1;</description>
+            <description>&about.text2;</description>
+            <vbox class="indent">
+              <description>&about.feature1;</description>
+              <description>&about.feature2;</description>
+              <description>&about.feature3;</description>
+              <description>&about.feature4;</description>
+              <description>&about.feature5;</description>
+            </vbox>
+            <description id="donate1">&donate.text1;</description>
+            <vbox id="donate2">
+              <hbox>
+                <spacer flex="1"/>
+                <button label="&donate.label;"
+                        id="donateButton"
+                        oncommand="Donate()"/>
+                <spacer flex="1"/>
+              </hbox>
+              <description >&donate.text2;</description>
+            </vbox>
+	        </vbox>
+	        <vbox>
+	          <description>&whatsnew.label;</description>
+            <vbox class="indent">
+              <description>&whatsnew2.text;</description>
+              <description>&whatsnew1.text;</description>
+            </vbox>
+	        </vbox>
+	      </tabpanels>
+      </tabbox>
+	  </vbox>
+    <spacer flex="1"/>
+  </hbox>
+</window>

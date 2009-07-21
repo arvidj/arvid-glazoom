@@ -1,0 +1,57 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the Glazoom extension for Mozilla Firefox.
+ *
+ * The Initial Developer of the Original Code is
+ * DISRUPTIVE INNOVATIONS SARL
+ * Portions created by the Initial Developer are Copyright (C) 2008
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+#page, #tabbox {
+  margin-top: 15px;
+}
+
+#main {
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  max-width: 640px;
+  min-width: 640px;
+  padding: 1em;
+  border: silver 2px solid;
+  -moz-border-radius: 9px;
+  font-size: larger;
+}
+
+#titleBox {
+  font-size: xx-large;
+}
+
+#donate1, #donate2 {
+  margin-top: 15px;
+}
+
+#donate2 {
+  font-weight: bold;
+  border: 2px gray groove;
+  -moz-border-radius: 9px;
+  padding: 10px;
+}
+
+#donateButton {
+  cursor: pointer;
+}
+

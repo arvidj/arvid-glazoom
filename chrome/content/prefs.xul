@@ -1,0 +1,160 @@
+<?xml version='1.0'?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the Glazoom extension for Mozilla Firefox.
+   -
+   - The Initial Developer of the Original Code is
+   - DISRUPTIVE INNOVATIONS SARL
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://glazoom/skin/prefs.css" type="text/css"?>
+
+<!DOCTYPE prefwindow SYSTEM "chrome://glazoom/locale/prefs.dtd">
+
+<prefwindow id="glazoom_prefs"
+            windowtype="Glazoom:Preferences"
+            title="&prefs.title;"
+            orient="vertical"
+            ondialogaccept="StorePrefs()"
+            onload="Init()"
+            buttons="accept,cancel"
+            xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+
+  <script type='application/x-javascript'
+          src='chrome://glazoom/content/prefs.js'></script>
+
+  <prefpane id="saveoptions" image="chrome://glazoom/skin/glazoom.png">
+    <preferences>
+      <preference id="Glazoom-maxZoom"
+                  name="extensions.glazoom.maxZoomFactor"
+                  type="int"/>
+      <preference id="Glazoom-preferTableCells"
+                  name="extensions.glazoom.preferTableCells"
+                  type="bool"/>
+      <preference id="Glazoom-presetZoomFactors"
+                  name="toolkit.zoomManager.zoomValues"
+                  type="string"/>
+      <preference id="Glazoom-applyPrefToSetting"
+                  name="toolkit.zoomManager.applyPrefToSetting"
+                  type="int"/>
+      <preference id="Glazoom-browserZoomFull"
+                  name="browser.zoom.full"
+                  type="bool"/>
+      <preference id="Glazoom-autoZoom"
+                  name="extensions.glazoom.autoZoom"
+                  type="int"/>
+      <preference id="Glazoom-buttons"
+                  name="extensions.glazoom.buttonsStyle"
+                  type="string"/>
+      <preference id="Glazoom-zoomMargin"
+                  name="extensions.glazoom.zoomMargin"
+                  type="int"/>
+    </preferences>
+
+    <grid>
+      <columns><column/><column/><column/></columns>
+      <rows>
+        <row align="center" style="margin-bottom: 1em">
+          <label control="useFullZoom" value="&useFullZoom.label;"/>
+          <checkbox id="useFullZoom"
+                    label="&useFullZoom.checkbox;"
+                    preference="Glazoom-browserZoomFull"/>
+        </row>
+        <row align="center">
+          <label control="maxZoomFactor" value="&maxZoomFactor.label;"/>
+          <hbox align="center">
+            <textbox id="maxZoomFactor"
+                     size="3" cols="3" type="number"
+                     preference="Glazoom-maxZoom"/>
+            <label value="&maxZoomFactor.value.unit;"/>
+          </hbox>
+          <hbox>
+            <spacer flex="1"/>
+            <image src="chrome://glazoom/skin/glazoom.png"/>
+            <spacer flex="1"/>
+          </hbox>
+        </row>
+	<row align="center">
+          <label control="zoomMargin" value="&zoomMargin.label;"/>
+          <hbox align="center">
+            <textbox id="zoomMargin"
+                     size="3" cols="3" type="number"
+                     preference="Glazoom-zoomMargin"/>
+            <label value="&zoomMargin.value.unit;"/>
+          </hbox>
+	</row>
+        <row align="center" style="margin-bottom: 1em">
+          <label control="preferTableCells" value="&focusElement.label;"/>
+          <checkbox id="preferTableCells"
+                    label="&preferTableCells.label;"
+                    preference="Glazoom-preferTableCells"/>
+          <label value="&aboutGlazoom.label;"
+                 id="aboutGlazoom"
+                 onclick="About()"/>
+        </row>
+        <row>
+          <spacer/>
+          <spacer/>
+          <label value="&donate.label;"
+                 id="donateButton"
+                 onclick="About()"/>
+        </row>
+        <row align="center">
+          <label control="applyPrefToSetting" value="&onLocationChange.label;"/>
+          <radiogroup preference="Glazoom-applyPrefToSetting" orient="vertical"
+                      oncommand="ToggleAutoZoom(this)">
+            <radio id="noApplyPrefToSetting"
+                   value="0"
+                   label="none" />
+            <radio id="applyPrefToSetting"
+                   value="1"
+                   label="&applyPrefToSetting.label;" />
+            <hbox align="center">
+              <radio id="autoZoomApplyPrefToSetting"
+                     value="2"
+                     label="apply following zoom to all pages:" />
+              <textbox id="autoZoomValue" class="indent" disabled="true" value="100"
+                       preference="Glazoom-autoZoom"
+                       size="3" cols="3" type="number"/>
+            </hbox>
+
+          </radiogroup>
+        </row>
+        <row align="center">
+          <label control="presetZoomFactors" value="&presetZooms.label;"/>
+          <textbox id="presetZoomFactors"
+                   preference="Glazoom-presetZoomFactors"/>
+        </row>
+        <row align="center">
+          <label control="buttonsStyle" value="&buttonsStyle.label;"/>
+          <menulist id="buttonsStyle"
+                    preference="Glazoom-buttons">
+            <menupopup>
+              <menuitem label="&nobuttons.label;" value="none"/>
+              <menuitem label="&spinbuttons.label;" value="spinbuttons"/>
+              <menuitem label="&magnifyingGlasses.label;" value="magglasses"/>
+            </menupopup>
+          </menulist>
+        </row>
+      </rows>
+    </grid>
+  </prefpane>
+</prefwindow>

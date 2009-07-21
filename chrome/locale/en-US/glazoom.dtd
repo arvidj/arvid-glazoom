@@ -1,0 +1,6 @@
+﻿<!ENTITY glazoomMenuItem.label "Zoom on element">
+<!ENTITY glazoomBackMenuItem.label "Real size (1:1)">
+<!ENTITY preferences.label "Options">
+<!ENTITY glazoomFitToWindowMenuItem.label "Fit horizontally to window">
+<!ENTITY inspectMenuItem.label "Select an element to focus on">
+<!ENTITY inspectMenuItem.accesskey "S">

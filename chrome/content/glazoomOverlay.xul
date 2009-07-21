@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the Glazoom extension for Mozilla Firefox.
+   -
+   - The Initial Developer of the Original Code is
+   - DISRUPTIVE INNOVATIONS SARL
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE overlay SYSTEM "chrome://glazoom/locale/glazoom.dtd">
+
+<overlay id='glazoomOverlay' 
+    xmlns='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'>
+
+  <script type='application/x-javascript'
+          src='chrome://glazoom/content/glazoom.js'></script>
+  <script type='application/x-javascript'
+          src='chrome://glazoom/content/elementPinger.js'></script>
+
+  <script type="application/x-javascript">
+  <![CDATA[
+      window.addEventListener('load',   diGlazoom.init, false);
+      window.addEventListener('unload', diGlazoom.shutdown, false);
+  ]]>
+  </script>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="creatorString"    src="chrome://glazoom/locale/elementPinger.properties"/>
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+    <menuseparator/>
+    <menuitem label="&glazoomMenuItem.label;"
+              id="diGlazoomMenuItem"
+              oncommand="diGlazoom.zoomContextNode();"
+             />
+    <menuitem label="&glazoomBackMenuItem.label;"
+              id="diGlazoomBackMenuItem"
+              oncommand="diGlazoom.zoomBack();"
+             />
+    <menuitem label="&glazoomFitToWindowMenuItem.label;"
+              id="diGlazoomFitToWindowMenuItem"
+              oncommand="diGlazoom.fitToWindow()"
+             />
+  </popup>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="status-zoompanel" align="center">
+
+	    <spinbuttons id="zoompanel-spinbuttons"
+                   onup="diGlazoom.enlarge()"
+	                 ondown="diGlazoom.reduce()"/>
+      <toolbarbutton id="diGlazoomReduce"
+                     oncommand="diGlazoom.reduce()"/>
+      <menulist id="menulist-zoompanel"
+                editable="true"
+                value="100%"
+                sizetopopup="none"
+                onkeyup="diGlazoom.onKeyUp(event)"
+                oncommand="diGlazoom.applyZoomValue(this)">
+        <menupopup id="menupopup-zoompanel"
+                   onpopupshowing="diGlazoom.fillZoomValues(this)">
+          <menuitem label="&preferences.label;"
+                    oncommand="diGlazoom.openPreferences()"/>
+          <menuitem label="&inspectMenuItem.label;"
+                    accesskey="&inspectMenuItem.accesskey;"
+                    oncommand="GlazoomElementPinger.inspect(getBrowser().contentDocument)"/>
+          <menuseparator id="menuseparator-zoompanel"/>
+        </menupopup>
+      </menulist>
+      <toolbarbutton id="diGlazoomEnlarge"
+                     oncommand="diGlazoom.enlarge()"/>
+    </statusbarpanel>
+  </statusbar>
+</overlay>

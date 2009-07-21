@@ -1,0 +1,25 @@
+﻿<!ENTITY about.title "About Glazoom">
+<!ENTITY version.label "v0.4">
+<!ENTITY author.control "Author:">
+<!ENTITY author.label "Daniel Glazman">
+<!ENTITY okButton.label "Ok">
+
+<!ENTITY about.text1 "Glazoom is both an accessibility tool allowing the user to right-click on a block of text or image and adapt the full-zoom factor so the whole block/image fits into the browser's viewport, and a statusbar panel giving fine and direct control over the fullZoom feature of Firefox 3.">
+<!ENTITY about.text2 "Main features:">
+<!ENTITY about.feature1 "- Easy to switch between Text Zoom and Full Zoom">
+<!ENTITY about.feature2 "- Can focus on table cells">
+<!ENTITY about.feature3 "- Zoom policy for all pages from the same domain">
+<!ENTITY about.feature4 "- Easy management of the preset zoom levels">
+<!ENTITY about.feature5 "- Different button styles for one-click access to zoom in and out">
+
+<!ENTITY donate.text1 "I spend a lot of time maintaining this free extension for the greatest benefit of all, and in particular of visually impaired users. ">
+<!ENTITY donate.text2 "If this extension makes your Firefox user experience better, please consider making a small donation that will help me spend more time working on it. (PayPal account is not necessary, credit cards accepted)">
+
+<!ENTITY whatsnew.label "What's new with this version:">
+<!ENTITY whatsnew1.text "- Menuseparator in the statusbarpanel's menu was not displayed correctly">
+<!ENTITY whatsnew2.text "- New menu item 'Select an element to focus on' to visually select an element">
+
+<!ENTITY donate.label "Donate">
+
+<!ENTITY about.tab "About...">
+<!ENTITY whatsnew.tab "What's new">
